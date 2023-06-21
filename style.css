@@ -1,0 +1,51 @@
+body {
+  --verde-claro: #227f89;
+  --verde-escuro: #13646b;
+  --verde-texto: #4e98a0;
+}
+
+.logo {
+  width: 160px;
+  height: 160px;
+}
+
+.cor-primaria {
+  color: var(--verde-claro);
+}
+
+.botao-primario {
+  background-color: var(--verde-claro);
+  width: 200px;
+
+  .ancora {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.botao-secundario,
+.botao-primario:hover,
+.botao-secundario:hover {
+  background-color: var(--verde-escuro);
+  width: 200px;
+
+  .ancora {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.texto-primario {
+  color: var(--verde-texto);
+}
+
+.footer {
+  background-color: var(--verde-claro);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.aside-image {
+  height: 100vh;
+}
