@@ -1,0 +1,22 @@
+body {
+    --verde-claro: #227f89;
+    --verde-escuro: #13646b;
+    --verde-texto: #4e98a0;
+    background-color: var(--verde-claro);
+}
+
+.cor-primaria {
+    color: var(--verde-escuro);
+}
+
+.botao-primario {
+    width: 200px;
+}
+
+.botao-google {
+    width: 250px;
+}
+
+.form-floating {
+    width: 230px;
+}
