@@ -1,0 +1,27 @@
+body {
+  --verde-claro: #227f89;
+  --verde-escuro: #13646b;
+  --verde-texto: #4e98a0;
+  overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+
+.botao-primario {
+  background-color: var(--verde-escuro);
+  color: white;
+  width: 200px;
+}
+
+.botao-salvar {
+  background-color: var(--verde-escuro);
+  color: white;
+}
+
+.botao-primario:hover,
+.botao-salvar:hover {
+  background-color: var(--verde-claro);
+  color: white;
+}

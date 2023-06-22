@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fintech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-expand-lg navbar" style="background-color: #4e98a0">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand fs-4 text-white fw-bold"
+            style="letter-spacing: 1px"
+            href="#"
+            >Dashboard</a
+          >
+          <button
+            class="navbar-toggler text-white bg-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            style="background-color: #4e98a0"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title text-white fw-bold"
+                id="offcanvasNavbarLabel"
+              >
+                Fintech
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Início</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Suporte</a>
+                </li>
+              </ul>
+              <a href="./index.html" target="_blank">
+                <button type="button" class="btn btn-danger">Sair</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-100 d-flex flex-column justify-content-between">
+      <div class="row">
+        <section class="bg-body-secondary">
+          <div
+            class="d-flex align-items-center justify-content-between mx-auto col-10 col-sm-9 col-lg-6 px-0 py-2"
+            style="color: #13646b; font-weight: 500"
+          >
+            <span>ITEM</span>
+            <span>VALOR MÊS</span>
+            <span>INFO</span>
+          </div>
+        </section>
+        <section
+          class="mx-auto col-10 col-sm-9 col-lg-6"
+          style="color: #13646b; font-weight: 500"
+        >
+          <div class="row py-3 border-bottom border-black">
+            <span class="col-4 my-auto">Seguro Cartão</span>
+            <span class="col-4 text-center my-auto">R$ 30,00</span>
+            <span class="col-4 text-end my-auto pe-0">Gasto</span>
+          </div>
+
+          <div class="row py-3 border-bottom border-black">
+            <span class="col-4 my-auto">Salário</span>
+            <span class="col-4 text-center my-auto">R$ 10.000,00</span>
+            <span class="col-4 text-end my-auto pe-0">Ganho</span>
+          </div>
+
+          <div class="row py-3 border-bottom border-black">
+            <span class="col-4 my-auto">Faculdade</span>
+            <span class="col-4 text-center my-auto">R$ 1.000,00</span>
+            <span class="col-4 text-end my-auto pe-0">Gasto</span>
+          </div>
+
+          <div class="row py-3 border-bottom border-black">
+            <span class="col-4 my-auto">Viagem</span>
+            <span class="col-4 text-center my-auto">R$ 250,00</span>
+            <span class="col-4 text-end my-auto pe-0">Poupar</span>
+          </div>
+        </section>
+      </div>
+      <button
+        type="button"
+        class="btn botao-primario fw-bold mx-auto mt-4"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Adicionar Serviço
+      </button>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Adicionar Serviço
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingItem"
+                placeholder="Item"
+              />
+              <label for="floatingItem">Item</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingValor"
+                placeholder="Valor"
+              />
+              <label for="floatingValor">Valor</label>
+            </div>
+            <div class="form-floating mt-3">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>Selecione a informação</option>
+                <option value="1">Ganho</option>
+                <option value="2">Despesa</option>
+                <option value="3">Poupar</option>
+              </select>
+              <label for="floatingSelect">Selecione a informação</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn botao-salvar">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
